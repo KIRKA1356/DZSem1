@@ -1,23 +1,13 @@
-﻿int max;
-Console.WriteLine("ВВедите первое число: ");
+﻿Console.WriteLine("Введите число: ");
 int n1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("ВВедите второе число: ");
-int n2 = Convert.ToInt32(Console.ReadLine());
+int n2 = n1 % 2;
 
-Console.WriteLine("ВВедите третье число: ");
-int n3 = Convert.ToInt32(Console.ReadLine());
-
-if (n1>n2 && n1>n3)
+if (n2 >0)
 {
-    max=n1;
+    Console.WriteLine("Число нечетное");
 }
     else
         {
-            max=n2;
+            Console.WriteLine("Число четное");
         }
-            if (n2<n3 && n3>n1)
-            {
-                max=n3;
-            }
-Console.WriteLine("Максимальное число: " + max);
